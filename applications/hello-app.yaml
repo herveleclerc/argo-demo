@@ -15,7 +15,7 @@ spec:
     helm:
       valueFiles:
       - $values/charts/hello/values.yaml
-  - repoURL: 'https://github.com/herveleclerc/argo-demo'
+  - repoURL: https://github.com/herveleclerc/argo-demo
     targetRevision: HEAD
     ref: values
   syncPolicy:
