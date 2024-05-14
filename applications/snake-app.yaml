@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: snake
+  namespace: argocd
+spec:
+  destination:
+    namespace: snake
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: snake/overlays/preprod
+    repoURL: https://github.com/herveleclerc/argo-demo
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true

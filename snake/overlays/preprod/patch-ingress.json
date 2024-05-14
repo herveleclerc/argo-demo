@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/spec/rules/0/host",
+        "value": "snake-ppr.apps.caas.fr"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/tls/0/hosts/0",
+        "value": "snake-ppr.apps.caas.fr"
+	    },
+    {
+        "op": "replace",
+        "path": "/spec/tls/0/secretName",
+        "value": "snake-ppr.apps.caas.fr-tls"
+    }
+]

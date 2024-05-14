@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: snake
+  name: snake
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: snake
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: snake
+    spec:
+      containers:
+      - image: bhargavshah86/kube-test
+        name: kube-test
+        resources: {}
+status: {}
