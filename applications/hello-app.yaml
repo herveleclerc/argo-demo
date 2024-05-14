@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   sources:
-  - repoURL: 'https://cloudecho.github.io/charts/'
+  - repoURL: https://cloudecho.github.io/charts
     chart: hello
     targetRevision: 0.1.2
     helm:
@@ -19,5 +19,8 @@ spec:
     targetRevision: HEAD
     ref: values
   syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
     - CreateNamespace=true
