@@ -18,7 +18,7 @@ spec:
         app: snake
     spec:
       containers:
-      - image: bhargavshah86/kube-test
+      - image: xbhargavshah86/kube-test
         name: kube-test
         resources: {}
 status: {}
