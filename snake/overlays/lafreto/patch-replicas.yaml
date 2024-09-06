@@ -3,4 +3,4 @@ kind: Deployment
 metadata:
   name: snake
 spec:
-  replicas: 3
+  replicas: 10
