@@ -1,4 +1,4 @@
-replicaCount: 3
+replicaCount: 3a
 ingress:
   enabled: true
   className: "nginx"
